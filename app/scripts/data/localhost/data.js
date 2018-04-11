@@ -1,0 +1,1 @@
+//var db_path = 'db/articles.txt';

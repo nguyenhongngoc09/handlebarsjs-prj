@@ -1,0 +1,68 @@
+.brand-partner {
+  margin-bottom: 60px;
+
+  &__section {
+    &-title {
+      color: $black-light;
+      font-family: $font-ubuntu-regular;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+
+    &-logo {
+      max-width: 180px;
+      max-height: 100%;
+      margin-right: 35px;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media #{$media-small-desktop} {
+    margin-bottom: 40px;
+
+    &__section {
+      margin-bottom: 20px;
+
+      &-title {
+        &--presented,
+        &--partner {
+          margin-bottom: 0;
+        }
+      }
+
+      &-logo {
+        &--wrapper {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-logo-container {
+        height: auto;
+      }
+
+      &-logo {
+        max-width: 210px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    &__section {
+      &-logo {
+        &--wrapper {
+          margin-bottom: 20px;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

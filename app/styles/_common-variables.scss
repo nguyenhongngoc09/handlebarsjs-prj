@@ -1,0 +1,108 @@
+// fonts
+$font-ubuntu-medium: 'Ubuntu Medium', sans-serif;
+$font-ubuntu-regular: 'Ubuntu', sans-serif;
+$font-ubuntu-light: 'Ubuntu Light', sans-serif;
+$font-ubuntu-bold: 'Ubuntu Medium', sans-serif;
+$font-ubuntu-medium-italic: 'Ubuntu Medium Italic', sans-serif;
+$font-ubuntu-regular-italic: 'Ubuntu Italic', sans-serif;
+$font-ubuntu-light-italic: 'Ubuntu Light Italic', sans-serif;
+$font-ubuntu-bold-italic: 'Ubuntu Medium Italic', sans-serif;
+$font-abel-regular: 'Abel', sans-serif;
+
+//color
+$black: #3a3939;
+$black-light: #231f20;
+
+$white: #ffffff;
+
+$grey: #999999;
+$grey-light: #f3f4f4;
+$grey-light-1: #dcdcdc;
+$grey-light-2: #ddd;
+$grey-light-3: #bdbdbd;
+$grey-light-4: #e2e2e2;
+$grey-light-5: #e6e7e7;
+$grey-light-6: #e1e1e1;
+
+$grey-light-slight: #e2e2e2;
+$purple: #4f1972;
+$purple-dark: #504559;
+$pink: #d8408b;
+
+$magenta: #d73685;
+
+$green: #19c56b;
+$green-banana: #a7da2a;
+$green-leaf: #16A95C;
+$green-leaf-darker: #138C4C;
+$green-light: #0DC571;
+
+$cyan-light: #e3f1f0;
+
+$blue-light: #1e96d3;
+
+$orange: #f7941d;
+
+$share-button-color: #e3e3e3;
+
+$sticky-menu-docked-color: #dadbdb;
+
+// break points
+$break-point-768: 768px;
+$break-point-992: 992px;
+$break-point-1200: 1200px;
+$break-point-1280: 1280px;
+$break-point-1400: 1400px;
+
+$media-screen-mobile: '(max-width: #{$break-point-768 - 1})';
+$media-screen-tablet: '(min-width: #{$break-point-768}) and (max-width: #{$break-point-992 - 1})';
+$media-not-desktop: '(max-width: #{$break-point-992 - 1})';
+$media-desktop: '(min-width: #{$break-point-992})';
+$media-small-desktop: '(min-width: #{$break-point-992}) and (max-width: #{$break-point-1200 - 1})';
+$media-large-desktop: '(min-width: #{$break-point-1400})';
+
+//height element
+$height-arrow-background: 70px;
+
+// spacing
+$padding-container: 15px;
+$margin-header-with-content: 25px;
+
+// section arrow
+$section-arrow-height-desktop: 80px;
+$section-arrow-height-mobile: 40px;
+
+// line-height
+$line-height-content: 1.6;
+$line-height-header: 1.1;
+
+// font size
+$font-size-base: 17px;
+$font-size-footnote: 12px;
+
+$font-size-large: 18px;
+$font-size-xlarge: 21px;
+$font-size-small: 14px;
+
+// button polygon
+$button-large-width: 176px;
+$button-large-height: 48px;
+
+$button-medium-width: 130px;
+$button-medium-height: 44px;
+
+$button-semi-medium-width: 60px;
+$button-semi-medium-height: 38px;
+
+$button-normal-width: 160px;
+$button-normal-height: 25px;
+
+
+// slide arrow size
+$arrow-desktop-width: 72px;
+$arrow-desktop-height: 84px;
+
+// $arrow-mobile-width: 49px;
+// $arrow-mobile-height: 199px;
+$arrow-mobile-width: 30px;
+$arrow-mobile-height: 115px;

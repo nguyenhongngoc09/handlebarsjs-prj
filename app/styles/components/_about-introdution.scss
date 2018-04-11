@@ -1,0 +1,43 @@
+.about {
+  background-color: $grey-light;
+  width: 100%;
+  position: relative;
+  padding: 0 0 50px;
+  z-index: 1;
+
+  &__overview {
+    padding-right: 30px;
+
+    &-title {
+      @extend %masthead-title;
+    }
+
+    &-introduction {
+      color: $purple-dark;
+      font-family: $font-ubuntu-regular;
+
+      a {
+        color: $green-light;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__hexagon-wrapper {
+    max-width: 585px;
+  }
+
+  @media #{$media-screen-mobile} {
+    &__overview {
+      &-title {
+        text-align: left;
+      }
+
+      &-introduction {
+        margin-top: 30px;
+      }
+    }
+
+
+  }
+}

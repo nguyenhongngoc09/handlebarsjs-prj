@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/chan-chun-sing.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Chan Chun Sing"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "chan-chun-sing",
+    "name": "Chan Chun Sing ",
+    "title": "Minister<br>Prime Minister’s Office, Republic of Singapore",
+    "image": "photo-chan-chun-sing.png",
+    "imageAlt": "Chan Chun Sing, Minister",
+    "highlight": "Mr Chan Chun Sing is currently the Secretary-General of the National Trades Union Congress (NTUC) and Minister in the Prime Minister Office.  On 1 October 2015, Mr Chan was appointed Deputy Chairman of the People’s Association.",
+    "details": "Mr Chan Chun Sing is currently the Secretary-General of the National Trades Union Congress (NTUC) and Minister in the Prime Minister Office.  On 1 October 2015, Mr Chan was appointed Deputy Chairman of the People’s Association.  He relinquished his previous duties in the Ministry of Social and Family Development (MSF) and Ministry of Defence on 9 April 2015 to join NTUC full time.  At MSF, he was responsible for improving social service delivery, enhancing social safety nets and strengthening support for families in Singapore. On 8 April 2015, the NTUC Central Committee unanimously elected him to be NTUC Secretary-General from 4 May 2015 to help strengthen labour leadership at NTUC and the link between the Labour Movement and the Government.  He was re-elected as the NTUC Secretary-General by the NTUC National Delegates’ Conference on 29 October 2015.",
+    "detailsLink": "chan-chun-sing.html"
+  }
+}

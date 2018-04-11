@@ -1,0 +1,24 @@
+<div class="speaker-highlight">
+  <div class="row speaker-highlight__header-container">
+    <div class="col-xs-12 col-md-6">
+      <div class="speaker-highlight__header">
+        <div class="speaker-highlight__header-name js-binding-field" data-field="name">{{content.name}}</div>
+        <div class="speaker-highlight__header-title js-binding-field" data-field="title">{{{content.title}}}</div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="speaker-highlight__image-container speaker-highlight__image-container--desktop">
+        {{> speaker-masthead speaker=content isHexagonRight=true}}
+      </div>
+      <div class="speaker-highlight__image-container speaker-highlight__image-container--mobile">
+        {{> speaker-masthead speaker=content}}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-lg-7 speaker-highlight_content-width">
+      <div class="speaker-highlight__content js-binding-field" data-field="details">{{{content.details}}}</div>
+    </div>
+  </div>
+</div>

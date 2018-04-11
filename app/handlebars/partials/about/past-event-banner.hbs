@@ -1,0 +1,31 @@
+<section class="container-full-width">
+  <div class="past-event-banner js-highlight-section" id="past-events">
+    <div class="container">
+      <div class="row" {{#if content.bannerId}}id="{{content.bannerId}}"{{/if}}>
+        <div class="col-sm-12 col-md-9 col-lg-7">
+          <div class="past-event-banner__content">
+            <h1 class="past-event-banner__content-title">{{{content.title}}}</h1>
+            {{#if content.subTitle}}
+              <h5 class="past-event-banner__content-sub-title">{{{content.subTitle}}}</h5>
+            {{/if}}
+            <p class="past-event-banner__content-description">{{{content.description}}}</p>
+
+            {{#if content.actions}}
+              <div class="past-event-banner__content-actions">
+                {{#each content.actions as |action indexAction|}}
+                  <a href="{{action.link}}" target="{{action.target}}">
+                    {{#if action.usePurpleColor}}
+                      <div class="past-event-banner__content-actions__purple">{{action.name}}</div>
+                    {{else}}
+                      <div class="past-event-banner__content-actions__green">{{action.name}}</div>
+                    {{/if}}
+                  </a>
+                {{/each}}
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<div class="lightbox--modal-overlay js-lightbox" id="speaker-lightbox">
+  <div class="lightbox--modal">
+    <div class="lightbox__container">
+      <div class="lightbox__action">
+        <div class="lightbox__action-close" onclick="toggleLightbox('speaker-lightbox')">
+          <img src="{{@root.config.asset_url}}lightbox-close.png" alt="Close">
+        </div>
+      </div>
+
+      {{> speaker-detail content=content}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Abel';
+  src: url($font_path + 'abel/abel-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url($font_path + 'ubuntu/ubuntu-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu Light';
+  src: url($font_path + 'ubuntu/ubuntu-light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Ubuntu Medium';
+  src: url($font_path + 'ubuntu/ubuntu-medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url($font_path + 'ubuntu/ubuntu-bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Ubuntu Medium Italic';
+  src: url($font_path + 'ubuntu/ubuntu-medium-italic.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Ubuntu Light Italic';
+  src: url($font_path + 'ubuntu/ubuntu-light-italic.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold Italic';
+  src: url($font_path + 'ubuntu/ubuntu-bold-italic.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Ubuntu Italic';
+  src: url($font_path + 'ubuntu/ubuntu-italic.ttf') format('truetype');
+  font-weight: 400;
+}

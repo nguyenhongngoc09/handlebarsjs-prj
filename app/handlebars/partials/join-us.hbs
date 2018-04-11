@@ -1,0 +1,32 @@
+<section class="container-full-width">
+  <div class="join-us">
+    <div class="container">
+      <div class="row join-us__conversation">
+        <div class="col-sm-6">
+          <div class="join-us__conversation-detail">
+            <h1 class="join-us__conversation-detail__title">{{content.title}}</h1>
+            <div class="join-us__conversation-detail__description">{{{content.description}}}</div>
+          </div>
+          {{#if content.infos}}
+            <ul class="join-us__conversation-more-info list-hexagon">
+              {{#each content.infos as |info indexInfo|}}
+                <li class="join-us__conversation-more-info__item">{{info}}</li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </div>
+        <div class="col-sm-6 join-us__hexagons js-slider-mobile">
+          {{#each content.illustrations as |illustration indexIllustration|}}
+            <div class="join-us__hexagons-{{illustration.style}}">
+              <img class="js-image-slider" src="{{../config.asset_url}}{{illustration.icon}}">
+              <div class="join-us__hexagons-{{illustration.style}}__text">
+                <div class="join-us__hexagons-{{illustration.style}}__text-title">{{illustration.title}}</div>
+                <div class="join-us__hexagons-{{illustration.style}}__text-description">{{illustration.description}}</div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

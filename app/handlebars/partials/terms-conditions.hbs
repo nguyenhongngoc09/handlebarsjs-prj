@@ -1,0 +1,44 @@
+<section class="container-full-width">
+  <div class="term-condition">
+    <div class="container">
+      <div class="row term-condition__header">
+        <div class="col-sm-6 col-md-7 col-md-offset-1">
+          <h1>{{content.title}}</h1>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="term-condition__header-masthead">
+            <div class="term-condition__header-masthead__image">
+              <img src="{{config.asset_url}}{{content.decoration}}" alt="{{content.decorationAlt}}">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row term-condition__content">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="term-condition__content-title ubuntu-big ubuntu--bold">
+            {{content.subTitle}}
+          </div>
+          <div class="term-condition__content-text ubuntu-small">
+           {{{content.agreementText}}}
+          </div>
+
+          <div class="term-condition__content-title ubuntu-big ubuntu--bold text-uppercase">
+            {{content.contentTitle}}
+          </div>
+          <div class="term-condition__content-text ubuntu-small">
+            {{{content.responsibilityText}}}
+          </div>
+          {{#each content.sections as |section indexSection|}}
+            <div class="term-condition__content-title ubuntu ubuntu--bold text-uppercase">
+              {{section.title}}
+            </div>
+            <div class="term-condition__content-text ubuntu-small">
+              {{{section.text}}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

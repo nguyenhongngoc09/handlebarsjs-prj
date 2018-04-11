@@ -1,0 +1,145 @@
+.header {
+  background-color: $grey-light;
+  width: 100%;
+  height: 70px;
+  padding: 35px 0 50px;
+
+  &-white {
+    background-color: $white;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    &-overlay {
+      width: 100%;
+      height: 100%;
+      background-color: $black-light;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      visibility: hidden;
+      @include transition(opacity, 0.3s);
+    }
+
+    &-mobile {
+      display: none;
+      width: 24px;
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      z-index: 4;
+      cursor: pointer;
+
+      &-bar {
+        border: 1px solid $green;
+        margin-bottom: 5px;
+        border-radius: 25px;
+      }
+    }
+
+    &-item {
+      font-family: $font-ubuntu-regular;
+      font-size: $font-size-large;
+      color: $purple;
+      display: inline-block;
+      margin-left: 70px;
+      @include transition(color 0.2s);
+
+      &:hover,
+      &--active {
+        color: $green;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    padding: 20px 0 50px;
+
+    &__logo {
+      width: 160px;
+      margin: 0 auto;
+    }
+
+    &__menu {
+      &-mobile {
+        display: block;
+
+        &-bar {
+          @include transition(all, 0.3s);
+        }
+      }
+
+      &-item-wrapper {
+        height: 100%;
+        padding: 80px 0 75px;
+        background: $green;
+        position: absolute;
+        top: 0;
+        right: -275px;
+        width: 275px;
+        z-index: 2;
+        @include transition(right, 0.3s);
+      }
+
+      &-item {
+        display: block;
+        color: $white;
+        margin: 0;
+        padding: 10px 20px;
+        border-top: 1px solid #fff;
+
+        &:last-child {
+          border-bottom: 1px solid #fff;
+        }
+
+        &:hover, &--active {
+          background: $white;
+          color: $green;
+        }
+      }
+
+      &--mobile-active {
+        .header__menu {
+          &-overlay {
+            visibility: visible;
+            opacity: 0.4;
+          }
+
+          &-mobile-bar {
+            border-color: $white;
+
+            &:nth-child(1) {
+              transform: translateY(10px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: translateY(-4px) rotate(-45deg);
+            }
+          }
+
+          &-item-wrapper {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

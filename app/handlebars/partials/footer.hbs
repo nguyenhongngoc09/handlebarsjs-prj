@@ -1,0 +1,25 @@
+<footer class="container-full-width">
+  <div class="container footer {{#if isWhiteBackgroundFooter}}footer--white{{/if}}">
+    {{#if showBrandPartnerBlock}}
+      {{> brand-partner content=partners}}
+    {{/if}}
+
+    <div class="footer__content" >
+      <div class="container">
+        <div class="footer__content-socials">
+          {{#each content.socials}}
+            <a class="footer__content-socials-item footer__content-socials-item--{{this.style}}" href="{{this.link}}" target="_blank"></a>
+          {{/each}}
+        </div>
+        <div class="footer__content-information">
+          <p class="footer__content-information-rights">{{content.rights}}</p>
+          <div>
+            <a href="{{content.terms.link}}">{{content.terms.text}}</a>
+            <span>{{content.email.text}}</span>
+            <a href="{{content.email.link}}">{{content.email.address}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

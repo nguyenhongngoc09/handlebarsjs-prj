@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/olav-kjorven.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Olav Kjorven"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "olav-kjorven",
+    "name": "Olav Kjørven",
+    "title": "Chief Strategic Officer<br>EAT Foundation",
+    "image": "photo-olav-kjorven.png",
+    "imageAlt": "Olav Kjørven",
+    "highlight": "",
+    "details": "Olav Kjørven is Chief Strategic Officer at EAT Foundation. In this role, Olav is part of EAT’s Senior Leadership team and provides strategic oversight to EAT’s policy work, leads engagement on global policy arenas, and guides EAT’s science and knowledge initiatives for maximum impact on food systems policies and practices.<br><br>Olav’s career spans political leadership roles for Norwegian development cooperation and several senior leadership posts at the United Nations. He led the Bureau for Development Policy of the United Nations Development Program for almost seven years, overseeing an international staff of some 360, programs delivering in the hundreds of millions every year, and policy work ranging from democratic governance to climate change. Throughout his career Olav has pursued every opportunity to increase global focus and commitment to sustainable development. This culminated in him playing a central role in the complex and highly political process that led to Agenda 2030 and the Sustainable Development Goals in 2015, including organizing the largest global consultation ever undertaken by the UN with millions of people engaged. Since then, it has been about mobilizing for action–at the UN, with governments, the private sector and civil society—and with a focus on children as Olav led UNICEF’s Division for Public Partnerships for the last three years.<br><br>Olav’s is widely recognized as a senior leader in sustainable development spanning 25 years. He is on the Board of Directors of the prestigious EARTH University in Costa Rica and on the Advisory Board for the Business for Peace Foundation and Initiative. He instigated and set up the Commission on the Legal Empowerment of the Poor, which produced its groundbreaking report “Making the Law Work for Everyone” in 2008, served as the UN Secretary General’s coordinator for the UN’s engagement in development with the G20, and co-led the UN system’s Task Team on the Post-2015 Development Agenda.<br><br>Olav holds a Master’s Degree in International Affairs from the George Washington University and is a Norwegian national.",
+    "detailsLink": "olav-kjorven.html"
+  }
+}

@@ -1,0 +1,59 @@
+$button-close-size: 50px;
+
+.lightbox {
+  &--modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  &--modal {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 0;
+    margin-bottom: 50px;
+    min-width: 80%;
+  }
+
+  &__action {
+    position: absolute;
+    top: - ($button-close-size / 2 );
+    right: - ($button-close-size / 2 - 13);
+    z-index: 1;
+    cursor: pointer;
+
+    &-close {
+      width: $button-close-size;
+      height: $button-close-size;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+  }
+
+  @media #{$media-screen-mobile} {
+    &--modal {
+      min-width: 90%;
+    }
+  }
+}

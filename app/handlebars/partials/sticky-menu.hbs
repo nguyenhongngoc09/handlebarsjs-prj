@@ -1,0 +1,24 @@
+<section class="container-full-width layout-top-most">
+  <div class="sticky-menu js-sticky-menu">
+    <div class="container">
+      <div class="sticky-menu__nav row js-sticky-nav">
+        <div class="sticky-menu__nav-dropdown-button js-sticky-nav-dropdown-button"></div>
+        <div class="sticky-menu__nav-item sticky-menu__nav-item--logo">
+          <img class="sticky-menu__nav-logo" src="{{config.asset_url}}{{logo}}">
+        </div>
+        {{#each content as |menuItem indexMenuItem|}}
+          {{#unless indexMenuItem}}
+            <div class="sticky-menu__nav-item sticky-menu__nav-item--mobile js-sticky-nav-dropdown-button">
+              <span class="js-menu-selected sticky-menu__nav-item__text active">{{menuItem.title}}</span>
+            </div>
+          {{/unless}}
+          <a href="{{#if menuItem.link}}{{menuItem.link}}{{else}}/#{{menuItem.goto}}{{/if}}"
+            class="sticky-menu__nav-item js-menu-item js-scroll-to-id"
+            data-scroll-to-id="{{menuItem.goto}}">
+            <span class="sticky-menu__nav-item__text">{{menuItem.title}}</span>
+          </a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

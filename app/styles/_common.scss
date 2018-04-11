@@ -1,0 +1,485 @@
+//common class
+.container {
+  @media #{$media-large-desktop} {
+    width: 1400px;
+  }
+}
+
+.container-full-width {
+  @extend .container-fluid;
+
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+
+  &--initial-position {
+    position: initial;
+  }
+}
+
+// layout
+.layout-top-most {
+  z-index: 999;
+}
+
+.no-scroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.list-hexagon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+
+  li {
+    font-family: $font-ubuntu-medium;
+    position: relative;
+
+    &:before {
+      content: " ";
+      background-image: url($images_path + 'element-bullet.svg');
+      background-repeat: no-repeat;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -15px;
+      top: 7px;
+
+      @media #{$media-large-desktop} {
+        top: 10px;
+      }
+
+      @media #{$media-desktop} {
+        top: 8px;
+      }
+
+      @media #{$media-screen-tablet}, #{$media-screen-mobile} {
+        top: 6px;
+      }
+    }
+  }
+}
+
+.section-arrow-down-grey,
+.section-arrow-up-grey,
+.section-arrow-up-white,
+.section-arrow-down-white {
+  position: relative;
+  width: 100%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-left: 49.5vw solid transparent;
+    border-right: 49.5vw solid transparent;
+  }
+}
+
+.section-arrow-down-grey {
+  &:before {
+    top: 100%;
+    border-top: $section-arrow-height-desktop solid $grey-light;
+
+    @media #{$media-screen-mobile} {
+      border-top: $section-arrow-height-mobile solid $grey-light;
+    }
+  }
+}
+
+.section-arrow-up-grey {
+  &:before {
+    top: 100%;
+    border-bottom: $section-arrow-height-desktop solid $grey-light;
+
+    @media #{$media-screen-mobile} {
+      border-bottom: $section-arrow-height-mobile solid $grey-light;
+    }
+  }
+}
+
+.section-arrow-up-white {
+  &:before {
+    bottom: 0;
+    border-bottom: $section-arrow-height-desktop solid $white;
+
+    @media #{$media-screen-mobile} {
+      border-bottom: $section-arrow-height-mobile solid $white;
+    }
+  }
+}
+
+.section-arrow-down-white {
+  &:before {
+    top: 100%;
+    border-top: $section-arrow-height-desktop solid $white;
+
+    @media #{$media-screen-mobile} {
+      border-top: $section-arrow-height-mobile solid $white;
+    }
+  }
+}
+
+.slick-initialized {
+  .slick-slide {
+    outline: none;
+  }
+
+  .slick-arrow {
+    height: $arrow-desktop-height;
+    width: $arrow-desktop-width;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      height: $arrow-desktop-height;
+      width: $arrow-desktop-width;
+      display: block;
+      transition: background-image 0.2s;
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &:before {
+      background-image: url($images_path + 'arrow-left-hexagon.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    &:hover.slick-prev:before {
+      background-image: url($images_path + 'arrow-left-hexagon-active.png');
+    }
+  }
+
+  .slick-next {
+    right: 0;
+
+    &:before {
+      background-image: url($images_path + 'arrow-right-hexagon.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    &:hover.slick-next:before {
+      background-image: url($images_path + 'arrow-right-hexagon-active.png');
+    }
+  }
+
+  .slick-dots {
+    position: initial;
+
+    li {
+      height: 23px;
+      margin: 0 20px;
+
+      button {
+        width: 20px;
+        height: 23px;
+        padding: 0;
+
+        &:before {
+          content: '';
+          width: 20px;
+          height: 23px;
+          background-image: url($images_path + 'slide-hexagon.png');
+          background-size: cover;
+        }
+      }
+
+      &.slick-active {
+        button:before {
+          background-image: url($images_path + 'slide-hexagon-active.png');
+        }
+      }
+    }
+  }
+}
+
+.button {
+  &--large {
+    @include button-hexagon($button-large-width, $button-large-height);
+  }
+
+  &--medium {
+    @include button-hexagon($button-medium-width, $button-medium-height);
+  }
+
+  &--semi-medium {
+    @include button-hexagon($button-semi-medium-width, $button-semi-medium-height);
+  }
+
+  &--normal {
+    @include button-hexagon($button-normal-width, $button-normal-height, $grey-light-1, $grey-light-1);
+  }
+
+  &--no-hover {
+    pointer-events: none;
+  }
+}
+
+.ubuntu-big, .ubuntu-xlarge {
+  @include font-size($font-size-xlarge);
+}
+
+.ubuntu-large {
+  @include font-size($font-size-large);
+}
+
+.ubuntu-small {
+  @include font-size($font-size-small);
+}
+
+.ubuntu-footnote {
+  font-size: $font-size-footnote;
+}
+
+.ubuntu,
+.ubuntu-footnote {
+  &--regular {
+    font-family: $font-ubuntu-regular;
+
+    &-italic {
+      font-family: $font-ubuntu-regular-italic;
+    }
+  }
+
+  &--bold {
+    font-family: $font-ubuntu-medium;
+  }
+
+  &--light {
+    font-family: $font-ubuntu-light;
+  }
+
+  &--medium {
+    font-family: $font-ubuntu-medium;
+
+    &-italic {
+      font-family: $font-ubuntu-medium-italic;
+    }
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-link {
+  color: $green;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: $green-leaf-darker;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.venue {
+  &__calendar,
+  &__address {
+
+    &-link {
+      display: flex;
+    }
+
+    &-text {
+      padding-left: 25px;
+    }
+
+    img {
+      width: 25px;
+      height: 30px;
+    }
+  }
+
+  &__calendar {
+    &-link,
+    &-text {
+      color: $purple-dark;
+    }
+  }
+
+  &__address {
+    color: $green;
+
+    &-link {
+      &:visited {
+        color: $green;
+      }
+    }
+  }
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.slick-initialized {
+  .slick-prev {
+    @media #{$media-small-desktop} {
+      left: - $arrow-desktop-width / 3;
+    }
+
+    &:before {
+      @media #{$media-screen-mobile} {
+        background-image: url($images_path + 'slide-arrow-left.png');
+      }
+    }
+
+    &:hover.slick-prev:before {
+      @media #{$media-screen-mobile} {
+        background-image: url($images_path + 'slide-arrow-left-active.png');
+      }
+    }
+  }
+
+  .slick-next {
+    @media #{$media-small-desktop} {
+      right: - $arrow-desktop-width / 3;
+    }
+
+    &:before {
+      @media #{$media-screen-mobile} {
+        background-image: url($images_path + 'slide-arrow-right.png');
+      }
+    }
+
+    &:hover.slick-next:before {
+      @media #{$media-screen-mobile} {
+        background-image: url($images_path + 'slide-arrow-right-active.png');
+      }
+    }
+  }
+
+  .slick-arrow {
+    transform: translate(0, 0);
+
+    @media #{$media-screen-mobile} {
+      height: $arrow-mobile-height;
+      width: $arrow-mobile-width;
+
+      &:before {
+        width: $arrow-mobile-width;
+        height: $arrow-mobile-height;
+      }
+    }
+  }
+}
+
+%h1 {
+  font-size: calc(53px + (83 - 53) * ((100vw - 320px) / (1400 - 320)));
+
+  @media #{$media-large-desktop} {
+    font-size: 83px;
+  }
+}
+
+%h2 {
+  font-size: calc(43px + (62 - 43) * ((100vw - 320px) / (1400 - 320)));
+
+  @media #{$media-large-desktop} {
+    font-size: 62px;
+  }
+}
+
+%h3 {
+  font-size: calc(32px + (48 - 32) * ((100vw - 320px) / (1400 - 320)));
+
+  @media #{$media-large-desktop} {
+    font-size: 48px;
+  }
+}
+
+%h4 {
+  font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1400 - 320)));
+
+  @media #{$media-large-desktop} {
+    font-size: 36px;
+  }
+}
+
+%h5 {
+  font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1400 - 320)));
+
+  @media #{$media-large-desktop} {
+    font-size: 26px;
+  }
+}
+
+%masthead-title {
+  // custom font size, will remove later
+  font-size: 63px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $break-point-992) and (max-width: ($break-point-1200 - 1)) {
+    font-size: 80px;
+  }
+
+  @media screen and (min-width: $break-point-1200) {
+    margin-bottom: $margin-header-with-content;
+    font-size: 90px;
+  }
+
+  @media screen and (min-width: $break-point-1400) {
+    font-size: 105px;
+  }
+}
+
+.flex-row {
+  @include flex-row;
+
+  &.flex-row--centered {
+    justify-content: center;
+  }
+}
+
+.flex-col {
+  @include flex-col;
+
+  &.flex-col--grow {
+    flex-grow: 1;
+  }
+
+  &.flex-col--center {
+    align-self: center;
+  }
+}
+
+.flex-col--mobile-full {
+  flex: 1 1 100%;
+  @media screen and (min-width: $screen-sm) {
+    flex: 0 1 auto;
+  }
+}

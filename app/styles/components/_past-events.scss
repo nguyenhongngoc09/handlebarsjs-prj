@@ -1,0 +1,100 @@
+.past-events {
+  margin: 75px 0 -40px;
+
+  &__item {
+    margin-bottom: 80px;
+    padding-bottom: 60px;
+
+    a {
+      float: right;
+    }
+
+    &-year {
+      @extend %h3;
+      width: auto;
+      font-family: $font-abel-regular;
+    }
+
+    &-title {
+      @extend %h5;
+      margin: 5px 0 35px;
+      font-family: $font-ubuntu-medium;
+    }
+
+    &-description {
+      margin-bottom: 30px;
+      font-family: $font-ubuntu-regular;
+    }
+
+    &-year,
+    &-title,
+    &-description {
+      color: $purple-dark;
+    }
+
+    &-more {
+      text-align: center;
+      cursor: pointer;
+      color: $white;
+      font-family: $font-ubuntu-medium;
+    }
+  }
+
+  @media #{$media-desktop}, #{$media-screen-tablet} {
+    &__item {
+      height: 450px;
+
+      a {
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+      }
+    }
+  }
+
+  @media #{$media-screen-tablet} {
+    &__item {
+      height: 440px;
+
+      a {
+        bottom: 80px;
+      }
+    }
+  }
+
+  @media #{$media-large-desktop} {
+    &__item {
+      height: 400px;
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    margin-top: 55px;
+
+    &__item {
+      margin-bottom: 20px;
+      padding-bottom: 95px;
+      text-align: left;
+      border-bottom: 1px solid $grey-light-slight;
+
+      a {
+        margin:  0 auto;
+        display:  inline-block;
+        width: 100%;
+        text-align:  center;
+      }
+
+      &-more {
+        left: 0;
+      }
+
+      &-title {
+        margin: 20px 0;
+      }
+
+      &-description {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

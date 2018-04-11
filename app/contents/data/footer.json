@@ -1,0 +1,22 @@
+{
+  "socials": [{
+    "style": "fb",
+    "link": "https://www.facebook.com/temasekholdings"
+  }, {
+    "style": "in",
+    "link": "https://www.linkedin.com/company/temasek-holdings/"
+  }, {
+    "style": "tw",
+    "link": "https://twitter.com/temasek"
+  }],
+  "rights": "© 2018 Temasek – All Rights Reserved.",
+  "terms": {
+    "text": "Terms & Conditions",
+    "link": "/terms-conditions.html"
+  },
+  "email": {
+    "text": " • Email us ",
+    "address": "ecosperity@temasek.com.sg",
+    "link": "mailto:ecosperity@temasek.com.sg"
+  }
+}

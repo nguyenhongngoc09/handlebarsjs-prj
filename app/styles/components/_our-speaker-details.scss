@@ -1,0 +1,141 @@
+.speaker-highlight {
+  position: relative;
+  padding: 0 50px 20px;
+
+  &__header-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__header,
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-name {
+      @extend %h3;
+
+      font-family: $font-abel-regular;
+      line-height: $line-height-header;
+      color: $purple-dark;
+    }
+
+    &-title {
+      font-size: $font-size-xlarge;
+      font-family: $font-ubuntu-regular;
+      color: $purple-dark;
+      margin-top: 10px;
+    }
+  }
+
+  &__content {
+    font-family: $font-ubuntu-regular;
+    color: $black-light;
+    margin-top: -50px;
+  }
+
+  &__image-container {
+    max-width: 400px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media #{$media-not-desktop} {
+    &__header {
+      &-title {
+        margin: 10px 0 40px;
+      }
+    }
+
+    &__content {
+      margin-top: 40px;
+    }
+
+    &__image-container {
+      margin: 0 auto;
+
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    padding: 0 20px 20px;
+
+    .speakers__masthead {
+      width: 100%;
+    }
+  }
+}
+
+.speaker-detail {
+  margin: 100px 0;
+
+  @media #{$media-screen-mobile} {
+    margin-top: 30px;
+  }
+
+  & .speaker-highlight {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.speaker-highlight,
+.speaker-detail {
+  &:before {
+    content: '';
+    width: 380px;
+    height: 600px;
+    background-image: url($images_path + 'half-hexagons.png');
+    position: absolute;
+    top: 450px;
+    right: -5%;
+  }
+
+  @media #{$media-small-desktop} {
+    &:before {
+      right: -15%;
+    }
+  }
+
+  @media #{$media-not-desktop} {
+    &:before {
+      right: -35%;
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: #{$break-point-1200}) and (max-width: #{$break-point-1280 - 1}) {
+  .speaker-highlight{
+
+    &_content-width {
+      width: 70% !important;
+    }
+
+    &:before {
+      right: -20% !important;
+    }
+  }
+}

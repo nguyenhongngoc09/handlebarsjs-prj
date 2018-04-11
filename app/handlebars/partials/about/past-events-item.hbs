@@ -1,0 +1,12 @@
+{{#each data}}
+  <div class="col-sm-6">
+    <div class="past-events__item">
+      <div class="past-events__item-year">{{this.year}}</div>
+      <div class="past-events__item-title">{{{this.title}}}</div>
+      <div class="past-events__item-description">{{this.description}}</div>
+      <a href="{{this.buttonLink}}" target="_blank" class="past-events__item-read">
+        <div class="past-events__item-more button button--medium">{{this.buttonText}}</div>
+      </a>
+    </div>
+  </div>
+{{/each}}

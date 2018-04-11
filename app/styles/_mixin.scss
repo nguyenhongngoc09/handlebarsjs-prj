@@ -1,0 +1,105 @@
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin button-hexagon($width, $height, $bg-color: $green, $bg-color-hover: $green-leaf, $bg-color-press: $green-leaf-darker) {
+  $border: $height / 2;
+
+  border: none;
+  border-radius: unset;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  line-height: $height;
+  background-color: $bg-color;
+  color: $white;
+  padding: 0;
+  margin: 0 $border;
+  cursor: pointer;
+  text-align: center;
+
+  &:after,
+  &:before {
+    content: " ";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    border-bottom: $border solid transparent;
+    border-top: $border solid transparent;
+  }
+
+  &:after {
+    right: - $border;
+    border-left: $border solid $bg-color;
+  }
+
+  &:before {
+    left: - $border;
+    border-right: $border solid $bg-color;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $bg-color-hover;
+
+    &:after {
+      border-left-color: $bg-color-hover;
+    }
+
+    &:before {
+      border-right-color: $bg-color-hover;
+    }
+  }
+
+  &:active{
+    color: $white;
+    background-color: $bg-color-press;
+
+    &:after {
+      border-left-color: $bg-color-press;
+    }
+
+    &:before {
+      border-right-color: $bg-color-press;
+    }
+  }
+  @media #{$media-screen-mobile} {
+    &:hover {
+      background-color: $bg-color;
+
+      &:after {
+        border-left-color: $bg-color;
+      }
+
+      &:before {
+        border-right-color: $bg-color;
+      }
+    }
+  }
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: stretch;
+
+  &:before {
+    display: initial; // required to overwrite bootstrap ".row:before {display:table}"
+  }
+}
+
+@mixin flex-col($flex-basis: auto) {
+  @if type-of($flex-basis) == number {
+    flex: 1 1 $flex-basis;
+  }
+  @else {
+    flex: 0 1 auto;
+  }
+}
+
+

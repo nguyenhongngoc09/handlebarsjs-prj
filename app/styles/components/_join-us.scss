@@ -1,0 +1,197 @@
+.join-us {
+  background-color: $grey-light;
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  min-height: 850px;
+
+  &__conversation {
+    &-detail {
+      &__title {
+        margin-bottom: 35px;
+      }
+
+      &__description {
+        font-family: $font-ubuntu-regular;
+        color: $purple-dark;
+      }
+    }
+
+    &-more-info {
+      margin-top: 25px;
+    }
+  }
+
+  &__hexagons {
+    position: relative;
+    margin-top: -50px;
+
+    &-food,
+    &-learn,
+    &-healthcare {
+      position: absolute;
+      max-width: 277px;
+
+      img {
+        max-width: 100%;
+      }
+
+      &__text {
+        max-width: 181px;
+        margin: 0 auto;
+
+        &-title {
+          font-family: $font-ubuntu-bold;
+        }
+
+        &-description {
+          @include font-size($font-size-small);
+
+          font-family: $font-ubuntu-regular;
+        }
+      }
+    }
+
+    &-food {
+      left: 125px;
+
+      &__text {
+        margin-right: -90px;
+        margin-top: -30px;
+      }
+    }
+
+    &-learn {
+      top: 275px;
+    }
+
+    &-healthcare {
+      left: 305px;
+      top: 365px;
+    }
+  }
+
+  @media #{$media-small-desktop} {
+    min-height: 650px;
+
+    &__conversation {
+      &-detail {
+        &__title {
+          margin-bottom: 15px;
+        }
+      }
+
+      &-more-info {
+        margin-top: 15px;
+      }
+    }
+
+    &__hexagons {
+      &-food,
+      &-learn,
+      &-healthcare {
+        width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-food {
+        left: 125px;
+
+        &__text {
+          margin-right: -90px;
+          margin-top: -30px;
+        }
+      }
+
+      &-learn {
+        top: 180px;
+      }
+
+      &-healthcare {
+        left: 228px;
+        top: 260px;
+      }
+    }
+  }
+
+  @media #{$media-screen-tablet} {
+    min-height: 600px;
+
+    &__hexagons {
+      margin-top: 0;
+
+      &-food,
+      &-learn,
+      &-healthcare {
+        img {
+          max-width: 130px;
+
+        }
+      }
+
+      &-food {
+        left: 110px;
+        img{
+          float: left;
+          position: relative;
+          left: -36px;
+        }
+        &__text {
+          float: right;
+          margin-top: unset;
+          margin-right: unset;
+          position: relative;
+          left: -24px;
+          top: -16px;
+        }
+      }
+
+      &-learn {
+        top: 145px;
+      }
+
+      &-healthcare {
+        left: 170px;
+        top: 224px;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    &__hexagons {
+      height: auto;
+      min-height: auto;
+      margin: 30px 0 40px !important;
+
+      &-food,
+      &-learn,
+      &-healthcare {
+        position: initial;
+        outline: none;
+        max-width: none;
+
+        img {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        &__text {
+          text-align: center;
+          max-width: 273px;
+          margin: 20px auto 30px;
+
+          &-title {
+            margin-bottom: 7px;
+          }
+        }
+      }
+
+      .slick-arrow {
+        top: 173px;
+      }
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "layout": {
+    "template": "index.hbs",
+    "isWhiteBackgroundHeader": true,
+    "isWhiteBackgroundFooter": true
+  },
+  "sitemap": {
+    "loc": "/index.html",
+    "lastModified": "2017-10-27T23:55:42+01:00",
+    "changeFrequency": "daily",
+    "priority": "0.5"
+  },
+  "dataLinks": [{
+    "dataFiles": [
+      "chan-chun-sing.json",
+      "koh-poh-koon.json",
+      "juergen-voegele.json",
+      "ehab-abouoaf.json",
+      "lim-boon-heng.json"
+    ],
+    "sourceProperty": "contents",
+    "property": "speakers"
+  }],
+  "exportToIcal": {
+    "sources": ["contents.schedule.venue.calendar"]
+  },
+  "contents": {
+    "logo": "logo-ecosperity-white.svg",
+    "schedule": {
+      "tag": "2018 Ecosperity Conference",
+      "start": "Tomorrow Starts Today!",
+      "idea": "From Ideas <span>to Impact</span>",
+      "video": {
+        "source": "videos/video-masthead.mp4",
+        "type": "video/mp4"
+      },
+      "viewSchedule": {
+        "text": "View Schedule",
+        "link": "#conference-schedule",
+        "target": "_self"
+      },
+      "venue": {
+        "calendar": {
+          "text": "Tuesday, June 5, 2018",
+          "link": "ecosperity-schedule.ics",
+          "target": "_blank",
+          "image": "icon-calendar.svg",
+          "location": "Suntec Convention Centre, Singapore Halls 403-405",
+          "startTime": "20180605T073000",
+          "subject": "Ecosperity Schedule",
+          "description": "We’re still finalizing the schedule, hence things may change a bit. Rest assured — it'll be a day to remember."
+        },
+        "address": {
+          "text": "Suntec Convention Centre, Singapore <br>Halls 403-405",
+          "link": "https://www.google.com.sg/maps/place/Suntec+Singapore+Convention+%26+Exhibition+Centre/@1.2936854,103.8550906,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19af38dd2bf3:0xd63e8cb2dacf54c7!8m2!3d1.2936854!4d103.8572793",
+          "target": "_blank",
+          "image": "icon-marker.svg"
+        }
+      },
+      "scrollMoreText": "Scroll for more"
+    },
+    "movingForward": {
+      "title": "Moving towards a more resilient and inclusive world",
+      "description": "The <a class=\"text-link\" target=\"_blank\" href=\"http://www.un.org/sustainabledevelopment/sustainable-development-goals/\">United Nations Sustainable Development Goals (SDGs)</a> have built momentum towards a more resilient and inclusive world. As the countdown to 2030 begins, there is growing consensus on the importance of public-private sector collaboration to achieve the SDGs. Businesses are starting to seize the US$12 trillion worth of opportunities in addressing our most pressing social and environmental challenges. Technology disruptions and demographic shifts will significantly change the way we learn, work and live. The time is ripe to translate our collective action into impact and tangible outcomes for our future generations."
+    },
+    "joinUs": {
+      "title": "Join us as we initiate a conversation",
+      "description": "The 5th Ecosperity Conference will be held in conjunction with United Nations World Environment Day. We will explore new approaches to education, food and healthcare to achieve impact at scale and build resilient societies in an increasingly digital and urban future.",
+      "illustrations": [{
+        "icon": "food-nutrition.png",
+        "style": "food",
+        "title": "Food to Nutrition",
+        "description": "Affordable access for a growing Asia"
+      }, {
+        "icon": "learning-learn.png",
+        "style": "learn",
+        "title": "Learning to Learn",
+        "description": "Adapting to continuous workforce disruption"
+      }, {
+        "icon": "health-care.png",
+        "style": "healthcare",
+        "title": "Healthcare to Self-care",
+        "description": "Empowering healthy, productive lives"
+      }]
+    },
+    "conferenceSchedule": {
+      "title": "Conference schedule",
+      "tabs": [{
+        "id": "ecosperity",
+        "title": "Ecosperity",
+        "scheduleTitle": "Conference schedule",
+        "venue": {
+          "calendar": {
+            "text": "Tuesday, June 5, 2018",
+            "link": "ecosperity-schedule.ics",
+            "target": "_blank",
+            "image": "icon-calendar.svg",
+            "location": "Suntec Convention Centre, Singapore Halls 403-405",
+            "startTime": "20180605T073000",
+            "subject": "Conference schedule",
+            "description": "We’re still finalising the schedule, hence things may change a bit. Rest assured — it'll be a day to remember."
+          },
+          "address": {
+            "text": "Suntec Convention Centre, Singapore <br>Halls 403-405",
+            "link": "https://www.google.com.sg/maps/place/Suntec+Singapore+Convention+%26+Exhibition+Centre/@1.2936854,103.8550906,17z/data=!3m1!4b1!4m5!3m4!1s0x31da19af38dd2bf3:0xd63e8cb2dacf54c7!8m2!3d1.2936854!4d103.8572793",
+            "target": "_blank",
+            "image": "icon-marker.svg"
+          }
+        },
+        "notes": ["We’re still finalising the schedule, hence things may change a bit. Rest assured — it'll be a day to remember."],
+        "isActive": true,
+        "scheduleItems": [{
+          "time": "07:30 - 08:30",
+          "color": "grey",
+          "icon": "registration",
+          "title": "Registration & coffee"
+        }, {
+          "time": "08:30 - 08:45",
+          "color": "pink",
+          "title": "Welcome and Opening Remarks",
+          "duration": "15 minutes"
+        }, {
+          "time": "08:45 - 09:15",
+          "color": "pink",
+          "title": "Opening Keynote Session",
+          "duration": "30 minutes"
+        }, {
+          "time": "09:15 - 10:15",
+          "color": "pink",
+          "title": "Panel Discussion: “Food to Nutrition: Affordable Access for a Growing Asia”",
+          "duration": "60 minutes",
+          "description": "The world’s population will grow to 9.8 billion in 2050 due to population growth and urbanisation. Asia and Africa are projected to urbanise more rapidly than other regions. How can we sustainably and nutritiously feed a rapidly growing Asia?"
+        }, {
+          "time": "10:15 - 10:45",
+          "color": "grey",
+          "icon": "tea-break",
+          "title": "Tea Break"
+        }, {
+          "time": "10:45 - 12:00",
+          "color": "pink",
+          "title": "Panel Discussion: “Learning to Learn: Adapting to Continuous Workforce Disruption”",
+          "duration": "75 minutes",
+          "description": "Technological advancements have disrupted businesses and job roles. How can we enable continuous learning for a workforce that is also living longer?"
+        }, {
+          "time": "12:00 - 13:00",
+          "color": "pink",
+          "title": "Panel Discussion: “Healthcare to Self-care: Empowering Healthy, Productive Lives”",
+          "duration": "60 minutes",
+          "description": "Urbanisation, demographic shifts and changing lifestyles have contributed to the growth of non–communicable diseases. With an increasingly aging population, what are the healthcare innovations and new approaches to keep people healthier for longer?"
+        }, {
+          "time": "13:00 - 14:30",
+          "color": "pink",
+          "title": "Closing Keynote session and lunch",
+          "duration": "90 minutes"
+        }, {
+          "time": "14:30 - 17:00",
+          "color": "pink",
+          "title": "Networking at UNLEASH Marketplace / Tour of Sustainable Solutions Expo",
+          "duration": "150 minutes"
+        }]
+      }]
+    },
+    "pastConference": {
+      "title": "Past Conference <br />Highlights",
+      "subTitle": "Tomorrow Starts Today! Securing our Sustainable Future in Asia",
+      "description": "In 2017, our 4th Ecosperity conference explored what it means for businesses to inegrate the values of sustainability and translate these into practice. From investing responsibility to considering the nexus between security and sustainability in Asia and beyond.",
+      "actions": [{
+        "name": "View 2017 Conference",
+        "link": "https://www.ecosperity.sg/2017/",
+        "target": "_blank"
+      }, {
+        "name": "View all archives",
+        "link": "/about-us.html#past-events",
+        "target": "_self",
+        "usePurpleColor": true
+      }]
+    },
+    "ourPartnerPrograms": {
+      "title": "Our Partner Programmes",
+      "programs": [{
+        "logo": "unleash-logo.png",
+        "name": "UNLEASH Innovation Lab",
+        "date": "May 30 - June 6, 2018",
+        "description": "A global innovation lab bringing 1,000 young talents from all over the world to work on new, innovative and disruptive solutions to achieve the UN Sustainable Development Goals.",
+        "link": "https://www.unleash.org",
+        "text": "Find out more",
+        "target": "_blank"
+      }, {
+        "logo": "icon-logo-stewardship.png",
+        "name": "Stewardship Asia Roundtable",
+        "date": "June 4, 2018",
+        "description": "Brings together the region's influential thinkers and leaders for a dynamic exchange of ideas on advocating sound stewardship and governance in their organisations and businesses. The theme for 2018 is \"Stewardship in a Disruptive World\".",
+        "link": "http://www.stewardshipasia.com.sg",
+        "text": "Find out more",
+        "target": "_blank"
+      }, {
+        "logo": "global-compact-logo.png",
+        "name": "CEO Roundtable",
+        "date": "June 4, 2018",
+        "description": "A dialogue between regional business leaders to ideate on how we can collaborate towards a low carbon economy future.",
+        "link": "http://www.csrsingapore.org/c/news/438-2nd-gcns-ceo-roundtable",
+        "text": "Find out more",
+        "target": "_blank"
+      }, {
+        "logo": "sustainable-solutions-expo-logo.png",
+        "name": "Sustainable Solutions Expo",
+        "date": "June 5-6, 2018",
+        "description": "Themed “Digitalisation and Innovation for a Low Carbon and Resilient Future”, the Expo will showcase solutions and investment opportunities in Asia with a focus on circular economy models, food and agriculture as well as digital connectivity. Organized by Global Compact Network Singapore (GCNS).",
+        "link": "https://www.sustainablesolutionsexpo.com/",
+        "text": "Find out more",
+        "target": "_blank"
+      }]
+    },
+    "subMenu": [{
+      "title": "Overview",
+      "goto": "overview",
+      "target": "_self"
+    }, {
+      "title": "Speakers",
+      "goto": "speakers",
+      "target": "_self"
+    }, {
+      "title": "Schedule",
+      "goto": "conference-schedule",
+      "target": "_self"
+    }, {
+      "title": "Past Conference",
+      "goto": "past-events",
+      "target": "_self"
+    }, {
+      "title": "Partner Programmes",
+      "goto": "partner-programmes",
+      "target": "_self"
+    }],
+    "moderators": {
+      "title": "2018 Speakers and Moderators",
+      "detail": "Be engaged by our panel of distinguished speakers at the conference.",
+      "actionLink": "/our-speakers.html",
+      "actionName": "View all"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+---
+layout: default.hbs
+isWhiteBackgroundHeader: false
+isWhiteBackgroundFooter: true
+showBrandPartnerBlock: false
+selectedId: about-us
+---
+
+{{> about-introduction content=contents.introduction}}
+
+{{> past-event-banner content=contents.pastEventBanner}}
+
+{{> past-events pastEvents=contents.pastEvents}}

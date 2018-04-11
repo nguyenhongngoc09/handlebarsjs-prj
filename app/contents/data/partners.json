@@ -1,0 +1,37 @@
+{
+  "presented": {
+    "title": "Presented by",
+    "logo": "temasek-logo.png",
+    "alt": "Temasek",
+    "link": "https://www.temasek.com.sg",
+    "target": "_blank"
+  },
+  "networkPartners": {
+    "title": "Network Partners",
+    "partners": [{
+      "logo": "global-compact-logo-small.png",
+      "alt": "Global Compact",
+      "link": "https://www.csrsingapore.org",
+      "target": "_blank"
+    }, {
+      "logo": "unleash-logo.png",
+      "alt": "Unleash",
+      "link": "https://www.unleash.org",
+      "target": "_blank"
+    }, {
+      "logo": "partner_stward.png",
+      "alt": "Stewardship Asia Centre",
+      "link": "http://www.stewardshipasia.com.sg",
+      "target": "_blank"
+    }]
+  },
+  "knowledgePartners": {
+    "title": "Knowledge Partners",
+    "partners": [{
+      "logo": "atkearney-logo.png",
+      "alt": "Atkearney",
+      "link": "https://www.atkearney.com",
+      "target": "_blank"
+    }]
+  }
+}

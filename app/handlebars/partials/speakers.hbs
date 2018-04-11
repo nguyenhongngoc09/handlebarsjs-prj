@@ -1,0 +1,30 @@
+<section class="container-full-width">
+  <div class="speakers js-highlight-section" id="speakers">
+    <div class="container">
+      <div class="speakers__header">
+        <h1>Speaker Highlights</h1>
+      </div>
+      <div class="speakers__slider js-slider">
+        {{#each speakers as |speaker indexSpeaker|}}
+          <div class="row">
+            <div class="col-sm-5 col-md-4 col-lg-4 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+              {{> speaker-masthead speaker=speaker}}
+            </div>
+            <div class="col-sm-5 col-md-6 col-lg-6">
+              <div class="speakers__content">
+                <div class="speakers__content-name ubuntu-large ubuntu--bold text-capitalize">{{{speaker.name}}}</div>
+                <div class="speakers__content-title ubuntu-large ubuntu--regular">{{{speaker.title}}}</div>
+                <div class="speakers__content-description ubuntu-small ubuntu--regular">{{{speaker.highlight}}}</div>
+                <div class="speakers__content-action">
+                  <a href="{{speaker.detailsLink}}" class="js-data-binding-link" data-view="speaker-lightbox" data-callback="toggleLightbox" data-callback-value="speaker-lightbox" data-asset-url="{{@root.config.asset_url}}">
+                    <button class="ubuntu-large ubuntu--regular">View full profile</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

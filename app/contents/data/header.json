@@ -1,0 +1,14 @@
+{
+  "logo": "logo.png",
+  "link": "/",
+  "target": "_self",
+  "menuItems": [{
+    "text": "2018 Conference",
+    "id": "events",
+    "link": "/"
+  }, {
+    "text": "About Us",
+    "id": "about-us",
+    "link": "/about-us.html"
+  }]
+}

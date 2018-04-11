@@ -1,0 +1,57 @@
+{
+  "layout": {
+    "template": "about.hbs"
+  },
+  "sitemap": {
+    "loc": "/about-us.html",
+    "lastModified": "2017-10-27T23:55:42+01:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | About Us"
+  },
+  "contents": {
+    "introduction": {
+      "title": "About Ecosperity",
+      "text": "Ecosperity is a series of sustainability-focused conferences presented by <a class=\"text-link\" href='https://www.temasek.com.sg/en/index.html' target='_blank'>Temasek</a>. The conference brings together CEOs, innovators, policy-makers and thought leaders from around the world to explore the latest on sustainability growth.<br><br>The name 'Ecosperiy' twins ecology and prosperity — recognizing that growth can and should take place in a sustainable manner."
+    },
+    "pastEventBanner": {
+      "title": "Browse the<br>Ecosperity Yearbook",
+      "description": "Here's a look at our past years’ conferences where you can learn more about the topics discussed and exciting speaker insights.",
+      "bannerId": "past-events"
+    },
+    "pastEvents": {
+      "firstRow": [
+        {
+          "year": "2017",
+          "title": "Tomorrow Starts Today!<br>Securing our Sustainable Future in Asia",
+          "description": "In 2017, we explored what it means for businesses to integrate the values of sustainability and translate these into practice. From investing responsibility to considering the nexus between security and sustainability in Asia and beyond.",
+          "buttonText": "Read more",
+          "buttonLink": "https://www.ecosperity.sg/2017/"
+        },
+        {
+          "year": "2016",
+          "title": "Sustainable Living<br>Sustaining Lives",
+          "description": "In 2016, we explored the fascinating possibilities and boundaries of scientific discovery, technological innovation and discussed the key success factors for the pursuit of better living for growing populations in harmony with other natural systems.",
+          "buttonText": "Read more",
+          "buttonLink": "https://www.ecosperity.sg/2016/"
+        }
+      ],
+      "secondRow": [
+        {
+          "year": "2015",
+          "title": "Urbanisation: Developing Cities for a Sustainable Future",
+          "description": "In 2015, we focused on urbanisation and the challenges and opportunities arising from developing smart and sustainable cities.",
+          "buttonText": "Read more",
+          "buttonLink": "https://www.ecosperity.sg/2015/"
+        },
+        {
+          "year": "2014",
+          "title": "Towards Sustainable Growth in the Natural Resources Industries",
+          "description": "In 2014, we focused on global energy, mining and agriculture – which are at the core of Asia’s economic growth. Sharing ideas and best practices on balancing environment objectives across these industries in both established and frontier regions.",
+          "buttonText": "Read more",
+          "buttonLink": "https://www.ecosperity.sg/2014/"
+        }
+      ]
+    }
+  }
+}

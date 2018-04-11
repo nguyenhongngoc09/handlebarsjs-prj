@@ -1,0 +1,28 @@
+.moderator {
+  padding: 125px 0;
+  position: relative;
+  z-index: 0;
+  background-color: $cyan-light;
+  background-image: url($images_path + 'moderator-background.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &__detail {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__action {
+    button {
+      @include button-hexagon(176px, 48px);
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    background-position: calc( 100% + 260px);
+
+    &__action {
+      text-align: center;
+    }
+  }
+}

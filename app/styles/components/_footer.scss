@@ -1,0 +1,60 @@
+.footer {
+  padding-top: 125px;
+  background-color: $grey-light;
+  border-top: 2px solid $grey-light-1;
+
+  &--white {
+    background-color: $white;
+  }
+
+  &__content {
+    font-family: $font-ubuntu-light;
+    @include font-size($font-size-small);
+    color: $grey;
+    text-align: center;
+    padding: 15px 0 50px;
+
+    &-socials {
+      &-item {
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        margin-right: 20px;
+        background-size: 26px;
+        opacity: 0.8;
+        @include transition(opacity, 0.2s);
+
+        &--fb {
+          background-image: url($images_path + 'icon-fb.png');
+        }
+
+        &--in {
+          background-image: url($images_path + 'icon-in.png');
+        }
+
+        &--tw {
+          background-image: url($images_path + 'icon-tw.png');
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    &-information {
+      color: $grey;
+      font-weight: bold;
+      font-size: $font-size-small;
+
+      a {
+        color: $green;
+        text-decoration: underline;
+      }
+
+      &-rights {
+        margin: 25px 0 5px;
+      }
+    }
+  }
+}

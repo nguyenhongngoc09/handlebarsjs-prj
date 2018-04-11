@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/ehab-abouoaf.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Ehab Abou-Oaf"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "ehab-abouoaf",
+    "name": "Ehab Abou-Oaf",
+    "title": "Regional President<br>Mars Wrigley Confectionery, Asia-Australia, Middle East & Africa",
+    "image": "photo-ehab-abouoaf.png",
+    "imageAlt": "Ehab Abou-Oaf, Regional President",
+    "highlight": "Ehab is currently the Regional President for the Mars Wrigley Confectionery segment in Asia-Australia, Middle East & Africa and is a member of the Mars Wrigley Confectionery Board of Management. Ehab covers geography that is home to more than half of the world’s consumers and is the future growth engine globally.",
+    "details": "Ehab is currently the Regional President for the Mars Wrigley Confectionery segment in Asia-Australia, Middle East & Africa and is a member of the Mars Wrigley Confectionery Board of Management. Ehab covers geography that is home to more than half of the world’s consumers and is the future growth engine globally. He is managing the full P&L of a business that is > USD$ 3.0B in RSV, more than 3000 associates and a broad footprint of manufacturing facilities. He joined Mars in 2000 and championed the company’s market entry into Egypt and then covered the North African and East Mediterranean region, leading 17 markets. In 2007, Ehab was appointed as the GM of Mars China where he transformed the business quadrupling its sales and accelerating its profits 5 times, turning China into a power house for the Mars Global Chocolate business. In 2011, he led the creation of the Asia Pacific region for the Chocolate segment.<br><br>Ehab started his career in Research & Development at Procter & Gamble in Saudi Arabia, and later played various roles within R&D around the world. He was a Group Manager in the European Technical Centre in Brussels, Belgium in charge of developing upstream global products, a Section Head in the Kobe Technical Center in Japan championing the product program and market entry for the Home Care segment in Asia Pacific, and Global Associate Director for Home Care Products, located in Brussels, Belgium.<br><br>Throughout his career, Ehab has developed experiences with a broad range of business situations (startups, turn arounds and sustaining success) in both the developed and emerging markets. He has built expertise in leading and engaging large complex organizations.<br><br>He is the Chairman of the Board of Governors of the Singapore American School and The President of Food Industry Asia.<br><br>Ehab is an Egyptian / Belgian citizen. He holds a B.Sc with Honours in Engineering from the American University in Cairo, following his graduation with the International Baccalaureate Diploma from the United World College of Lester Pearson in Canada.<br><br>He is married and is a father of 3 children. He enjoys running, travel and reading across various fields.",
+    "detailsLink": "ehab-abouoaf.html"
+  }
+}

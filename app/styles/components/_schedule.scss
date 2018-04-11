@@ -1,0 +1,137 @@
+.schedule {
+  background-color: $grey-light;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  &__overview {
+    &-detail {
+      &__idea {
+        @extend %masthead-title;
+
+        span {
+          display: block;
+        }
+      }
+
+      &__start {
+        color: $pink;
+      }
+    }
+
+    &-conference {
+      margin-bottom: 30px;
+
+      &__action {
+        color: $purple;
+        text-align: center;
+      }
+    }
+
+    &-address {
+      @include font-size($font-size-xlarge);
+
+      font-family: $font-abel-regular;
+      color: $purple-dark;
+      margin-bottom: 50px;
+    }
+
+    &-view-schedule {
+      & a {
+        text-decoration: none;
+      }
+
+      &__action {
+        @include font-size($font-size-large);
+        left: 20px;
+        color: $white;
+        text-align: center;
+        font-family: $font-ubuntu-medium;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__scroll-down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px;
+    bottom: - $height-arrow-background;
+    text-align: center;
+
+    &-text {
+      @include font-size($font-size-footnote);
+
+      font-family: $font-ubuntu-regular;
+      color: $purple-dark;
+      margin-bottom: 20px;
+    }
+
+    &-img {
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 20px;
+      animation: float-arrow 1s ease infinite alternate;
+      background-image: url($images_path + 'arrow-down-green.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 0 auto;
+    }
+
+    @keyframes float-arrow {
+      from {
+        top: 28px;
+      }
+
+      to {
+        top: 40px;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    &__overview {
+      margin-top: 30px;
+
+      &-detail {
+        &__idea {
+          span {
+            display: inline;
+          }
+        }
+      }
+
+      &-address {
+        margin: 20px 0 15px;
+      }
+
+      &-view-schedule {
+        width: 100%;
+
+        &__action {
+          margin: 0 auto;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__scroll-down {
+      display: none;
+    }
+  }
+
+  @media #{$media-screen-tablet} {
+    &__overview {
+      &-detail {
+        // margin-bottom: 20px;
+      }
+    }
+  }
+}

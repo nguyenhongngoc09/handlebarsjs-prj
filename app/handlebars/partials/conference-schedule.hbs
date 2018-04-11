@@ -1,0 +1,41 @@
+<section class="container-full-width">
+  <div id="conference-schedule" class="js-highlight-section conference-schedule section-arrow-down-white">
+    <div class="conference-schedule__container">
+      {{#each content.tabs as |tab indexTab|}}
+        <div id="{{tab.id}}" class="container tab-pane fade {{#if tab.isActive}}in active{{/if}}">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 conference-schedule__overview">
+              <h2 class="conference-schedule__overview-sub-title">{{tab.scheduleTitle}}</h2>
+              <div class="conference-schedule__overview-venue">
+                {{>venue venue=tab.venue}}
+              </div>
+              <ul class="conference-schedule__overview-note list-hexagon">
+                {{#each tab.notes as |note indexNote|}}
+                  <li>{{note}}</li>
+                {{/each}}
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 conference-schedule__details">
+              {{#each tab.scheduleItems as |schedule indexSchedule|}}
+                <div class="row conference-schedule__details-info">
+                  <div class="col-xs-12 col-sm-3 conference-schedule__details-info__time conference-schedule__details-info__time--{{schedule.color}}">{{schedule.time}}</div>
+                  <div class="col-xs-12 col-sm-9 conference-schedule__details-info__text {{#if schedule.icon}} conference-schedule__details-info__text--{{schedule.icon}}{{/if}}">
+                    <div class="conference-schedule__details-info__text--title">
+                      {{schedule.title}}
+                    </div>
+                    {{#if schedule.duration}}
+                      <div class="conference-schedule__details-info__text--duration ubuntu-footnote ubuntu-footnote--medium ubuntu-footnote--medium-italic">{{schedule.duration}}</div>
+                    {{/if}}
+                    {{#if schedule.description}}
+                      <div class="conference-schedule__details-info__text--description ubuntu--light">{{schedule.description}}</div>
+                    {{/if}}
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

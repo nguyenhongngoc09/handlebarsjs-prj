@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/juergen-voegele.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Juergen Voegele"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "juergen-voegele",
+    "name": "Juergen Voegele",
+    "title": "Senior Director<br>Food and Agriculture Global Practice, World Bank",
+    "image": "photo-juergen-voegele.png",
+    "imageAlt": "juergen-voegele",
+    "highlight": "Juergen Voegele was appointed Senior Director of the World Bank's Food and Agriculture Global Practice on July 1, 2014. In this role, he provides leadership on the Bank’s lending and knowledge activities spanning issues such as climate-smart agriculture, agriculture policy reform, food and nutrition security, and agriculture value chain development.",
+    "details": "Juergen Voegele was appointed Senior Director of the World Bank's Food and Agriculture Global Practice on July 1, 2014. In this role, he provides leadership on the Bank’s lending and knowledge activities spanning issues such as climate-smart agriculture, agriculture policy reform, food and nutrition security, and agriculture value chain development.<br><br>Dr. Voegele is chair of the CGIAR System Council Board, which oversees agricultural research programs tackling poverty, food and nutrition security, and improved natural resource management around the world. Since 2016, Dr. Voegele has served as co-chair of the Global Future Council of the World Economic Forum. He is also a member of the EAT Foundation Advisory Board since May 2017.<br><br>Since joining the World Bank in 1991, Dr. Voegele has held a number of assignments, chairing the Agriculture and Rural Development Sector Board as well as the Environment Sector Board, leading the Agriculture Unit in China, the Agriculture and Rural Development Unit of the Europe and Central Asia Region, and the Agriculture and Rural Development Department of the World Bank (later recast as the Agriculture and Environmental Services Department).<br><br>Dr. Voegele holds a PhD in Agriculture Engineering and a Masters in Agriculture Economics from the University of Hohenheim, in Germany.",
+    "detailsLink": "juergen-voegele.html"
+  }
+}

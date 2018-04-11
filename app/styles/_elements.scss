@@ -1,0 +1,31 @@
+html, body {
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  font-family: $font-ubuntu-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-content;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 { @extend %h1; }
+h2 { @extend %h2; }
+h3 { @extend %h3; }
+h4 { @extend %h4; }
+h5 { @extend %h5; }
+
+h1, h2, h3, h4, h5 {
+  line-height: $line-height-header;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: $font-abel-regular;
+  color: $purple;
+}
+
+a {
+  text-decoration: none;
+}

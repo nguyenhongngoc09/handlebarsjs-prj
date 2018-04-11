@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/saurine-doshi.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Saurine Doshi"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "saurine-doshi",
+    "name": "Saurine Doshi ",
+    "title": "Partner and Head of Asia Pacific <br>A.T Kearney",
+    "image": "photo-saurine-dosh.png",
+    "imageAlt": "saurine-dosh",
+    "highlight": "",
+    "details": "Saurine heads Asia Pacific at A.T. Kearney. He joined A.T. Kearney in 1994, and has been a partner since 2002. Over the last 18 years, Saurine has worked with and delivered value to major Indian and global clients across a diverse set of industries including Consumer Products and Retail, Communications and High-tech, Automotive and Discrete Manufacturing, and Pharmaceutical and Healthcare. <br><br>His expertise lies in driving growth and business strategies, transforming and enhancing organization capabilities, and delivering large scale margin improvement / cost reduction programs. <br><br>Saurine earned an M.B.A. from Wharton School of Business, and also has a civil engineering degree from the University of Colorado.",
+    "detailsLink": "saurine-doshi.html"
+  }
+}

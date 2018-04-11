@@ -1,0 +1,34 @@
+{
+  "layout": {
+    "template": "our-speakers.hbs"
+  },
+  "sitemap": {
+    "loc": "/our-speakers.html",
+    "lastModified": "2017-10-27T23:55:42+01:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speakers"
+  },
+  "dataLinks": [{
+    "dataFiles": [
+      "ehab-abouoaf.json",
+      "chan-chun-sing.json",
+      "saurine-doshi.json",
+      "olav-kjorven.json",
+      "koh-poh-koon.json",
+      "lim-boon-heng.json",
+      "juergen-voegele.json"
+    ],
+    "sourceProperty": "contents",
+    "property": "speakers"
+  }],
+  "contents": {
+    "header": {
+      "title": "Our Speakers and Moderators",
+      "description": "The speakers and moderators list is presented in alphabetical order according to last names. Please re-visit this website for additional speakers and updates.",
+      "decoration": "multi-hexagons.png",
+      "decorationAlt": ""
+    },
+    "loadmore": "Load more speakers"
+  }
+}

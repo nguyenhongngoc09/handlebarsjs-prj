@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+isWhiteBackgroundHeader: true
+isWhiteBackgroundFooter: true
+showBrandPartnerBlock: true
+emptyContent: {}
+---
+
+<section class="container-full-width">
+  <div class="speaker">
+    <div class="container">
+      {{> speaker-header content=contents.header}}
+
+      <div class="row speaker__cards js_speaker_cards">
+        {{#each speakers as |speaker indexSpeaker|}}
+          {{> speaker-card content=speaker}}
+        {{/each}}
+      </div>
+
+      <div class="row speaker_loadmore js_speaker_loadmore">
+        <div class="button button--large">
+          <div class="speaker_loadmore_button--display js_speaker_loadmore_button">{{contents.loadmore}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> speaker-lightbox content=emptyContent }}

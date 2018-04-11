@@ -1,0 +1,25 @@
+{
+  "layout": {
+    "template": "our-speaker-details.hbs"
+  },
+  "sitemap": {
+    "loc": "/koh-poh-koon.html",
+    "lastModified": "2018-03-22T00:00:00+08:00",
+    "changeFrequency": "daily",
+    "priority": "0.5",
+    "title": "Ecosperity | Speaker | Koh Poh Koon"
+  },
+  "exportToJson": {
+    "source": "contents"
+  },
+  "contents": {
+    "speakerId": "koh-poh-koon",
+    "name": "Dr Koh Poh Koon",
+    "title": "Senior Minister<br>Ministry of Trade & Industry and Ministry of National Development, Republic of Singapore",
+    "image": "photo-koh-poh-koon.png",
+    "imageAlt": "Dr Koh Poh Koon, Senior Minister",
+    "highlight": "Dr Koh Poh Koon was appointed Minister of State at the Ministry of Trade & Industry (MTI) and Ministry of National Development (MND) since 1 Jan 2016, and was promoted to Senior Minister of State on 1 May 2017.",
+    "details": "Dr Koh Poh Koon was appointed Minister of State at the Ministry of Trade & Industry (MTI) and Ministry of National Development (MND) since 1 Jan 2016, and was promoted to Senior Minister of State on 1 May 2017. <br><br>At MND, Dr Koh Poh oversees food security issues, including food safety and the development of local agriculture. The local agriculture sector plays a key role in Singapore’s food security. Championing the local farming industry, Dr Koh looks at how Singapore can become a “living lab” for urban farming solutions and new technologies, through Government support in technology adoption, and research and development. <br><br>In this regard, Dr Koh oversees the Farm Transformation Map to guide the transformation of the agricultural sector in four areas — physical space, innovation, people development, and the larger broad ecosystem.  This is done in consultation with progressive farmers representing various food farm types and academics who could help translate research in agricultural technology into practical implementation. Farm transformation efforts are ongoing to innovate, co-create and transform the sector through technology.<br><br>At MTI, Dr Koh focuses on research and development, and Entrepreneurship matters, and is the patron of the Action Community for Entrepreneurship. He is involved in the implementation of the Advanced Manufacturing and Engineering domain strategy under the Research, Innovation and Enterprise 2020 (RIE2020) plan. Dr Koh co-chairs two sub-committees under the Future Economy Council -  manufacturing as well as trade and connectivity clusters. He also looks at consumer protection which addresses unfair business practices. In the area of trade and investment, Dr Koh oversees the development of Singapore's bilateral economic relations with Africa, Latin America, the Middle East, and Russia & Central Asia.",
+    "detailsLink": "koh-poh-koon.html"
+  }
+}

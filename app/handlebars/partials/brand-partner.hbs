@@ -1,0 +1,35 @@
+<div class="brand-partner {{#if useWhiteBackground}}brand-partner-white{{/if}}">
+  <div class="row brand-partner__content">
+    <div class="col-lg-2 brand-partner__section">
+      <p class="brand-partner__section-title brand-partner__section-title--presented">{{content.presented.title}}</p>
+      <div class="brand-partner__section-logo-container">
+        <a href="{{content.presented.link}}" target="{{content.presented.target}}">
+          <img class="brand-partner__section-logo" src="{{config.asset_url}}{{content.presented.logo}}" alt="{{content.presented.alt}}">
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6 brand-partner__section">
+      <p class="brand-partner__section-title brand-partner__section-title--network">{{content.networkPartners.title}}</p>
+      <div class="row brand-partner__section-logo-container">
+        {{#each content.networkPartners.partners as |partner indexPartner|}}
+          <div class="col-xs-6 col-sm-4 col-md-4 brand-partner__section-logo--wrapper">
+            <a href="{{partner.link}}" target="{{partner.target}}">
+              <img class="brand-partner__section-logo" src="{{../config.asset_url}}{{partner.logo}}" alt="{{partner.alt}}">
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="clear-fix visible-xs"></div>
+    <div class="col-lg-2 brand-partner__section">
+      <p class="brand-partner__section-title brand-partner__section-title--partner">{{content.knowledgePartners.title}}</p>
+      <div class="brand-partner__section-logo-container">
+        {{#each content.knowledgePartners.partners as |partner indexPartner|}}
+          <a href="{{partner.link}}" target="{{partner.target}}">
+            <img class="brand-partner__section-logo" src="{{../config.asset_url}}{{partner.logo}}" alt="{{partner.alt}}">
+          </a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

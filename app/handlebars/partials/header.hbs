@@ -1,0 +1,28 @@
+<header class="container-full-width container-full-width--initial-position">
+  <div class="header {{#if isWhiteBackgroundHeader}}header-white{{/if}}" >
+    <div class="container">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="navbar-brand" href="{{content.link}}" target="{{content.target}}">
+            <img class="header__logo" alt="Ecosperity Logo" src="{{config.asset_url}}{{content.logo}}">
+          </a>
+        </div>
+
+        <div class="header__menu js-header-menu">
+          <div class="header__menu-overlay js-mobile-menu-trigger"></div>
+
+          <div class="header__menu-mobile js-mobile-menu-trigger">
+            <div class="header__menu-mobile-bar"></div>
+            <div class="header__menu-mobile-bar"></div>
+            <div class="header__menu-mobile-bar"></div>
+          </div>
+          <div class="header__menu-item-wrapper">
+            {{#each content.menuItems}}
+              <a id="{{this.id}}" class="header__menu-item {{#eq this.id ../selectedId}}header__menu-item--active{{/eq}}" href="{{this.link}}">{{this.text}}</a>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

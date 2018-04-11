@@ -1,0 +1,25 @@
+<section class="container-full-width">
+  <div class="our-partner section-arrow-down-grey js-highlight-section" id="partner-programmes">
+    <div class="container">
+      <h1 class="our-partner__title">{{content.title}}</h1>
+      <div class="row our-partner__row js-slider-mobile">
+        {{#each content.programs as |program indexProgram|}}
+          <div class="col-sm-3 our-partner__program">
+            <div class="our-partner__program-logo">
+              <div class="our-partner__program-logo--wrapper">
+                <img class="our-partner__program-logo-background js-image-slider" src="{{../config.asset_url}}dotted-outline.png">
+                <img class="our-partner__program-logo-image" src="{{../config.asset_url}}{{program.logo}}">
+              </div>
+            </div>
+            <p class="our-partner__program-name">{{program.name}}</p>
+            <p class="our-partner__program-date ubuntu-footnote ubuntu-footnote--regular ubuntu-footnote--regular-italic">{{program.date}}</p>
+            <p class="our-partner__program-description ubuntu--regular">{{{program.description}}}</p>
+            <a href="{{program.link}}" target="{{program.target}}" class="our-partner__program-findout">
+              <div class="button button--medium our-partner__program-btn">{{program.text}}</div>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

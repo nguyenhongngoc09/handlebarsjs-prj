@@ -1,0 +1,29 @@
+---
+layout: default.hbs
+isWhiteBackgroundFooter: true
+showBrandPartnerBlock: true
+selectedId: events
+emptyContent: {}
+---
+
+{{> schedule info=contents.schedule}}
+
+{{> sticky-menu content=contents.subMenu logo=contents.logo}}
+
+{{> moving-forward content=contents.movingForward}}
+
+{{> join-us content=contents.joinUs}}
+
+{{> speakers}}
+
+{{> moderator content=contents.moderators}}
+
+{{> conference-schedule content=contents.conferenceSchedule}}
+
+{{> past-event-banner content=contents.pastConference}}
+
+{{> our-partner content=contents.ourPartnerPrograms}}
+
+{{> social-share}}
+
+{{> speaker-lightbox content=emptyContent }}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else if sitemap.title}}
+        {{sitemap.title}}
+      {{else}}
+        Ecosperity
+      {{/if}}
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="GENERATOR" content="MSHTML 11.00.9600.18838">
+
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="npm-dep/slick-theme.css" rel="stylesheet">
+    <link href="npm-dep/slick.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+
+    <link rel="apple-touch-icon" href="images/favicon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="{{config.social_metas.twitter_summary}}">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{config.social_metas.og.title}}" />
+    <meta property="og:type" content="{{config.social_metas.og.type}}" />
+    <meta property="og:url" content="{{config.social_metas.og.url}}" />
+    <meta property="og:image" content="{{config.social_metas.og.image}}" />
+    <meta property="og:description" content="{{config.social_metas.og.description}}" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{config.gtm_id}}');</script>
+    <!-- End Google Tag Manager -->
+
+    <script language="javascript" type="text/javascript">
+      var style = document.createElement("style");
+      style.type = "text/css";
+      style.id = "antiClickjack";
+
+      if ("cssText" in style) {
+        style.cssText = "body{display:none !important;}";
+      } else {
+        style.innerHTML = "body{display:none !important;}";
+      }
+
+      document.getElementsByTagName("head")[0].appendChild(style);
+
+      if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        top.location = self.location;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{config.gtm_id}}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {{> header content=header isWhiteBackgroundHeader=isWhiteBackgroundHeader selectedId=selectedId}}
+
+    <main>
+      {% body %}
+    </main>
+    <button class="go-top js-go-top" title="Go to top"></button>
+
+    {{> footer content=footer
+      isWhiteBackgroundFooter=isWhiteBackgroundFooter
+      showBrandPartnerBlock=showBrandPartnerBlock
+    }}
+
+    <script type="text/javascript" src="npm-dep/jquery.min.js"></script>
+    <script type="text/javascript" src="npm-dep/slick.min.js"></script>
+    <script type="text/javascript" src="npm-dep/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/lightbox.js"></script>
+    <script type="text/javascript" src="scripts/sticky-menu.js"></script>
+    <script type="text/javascript" src="scripts/schedule-tabs.js"></script>
+    <script type="text/javascript" src="scripts/mobile-menu.js"></script>
+    <script type="text/javascript" src="scripts/calendar.js"></script>
+  </body>
+
+  {{> ga}}
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{config.add_this_id}}"></script>
+</html>

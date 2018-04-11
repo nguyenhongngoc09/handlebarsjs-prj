@@ -1,0 +1,136 @@
+.our-partner {
+  background: $grey-light;
+  margin-bottom: 120px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+  }
+
+  &__title {
+    margin: 125px 0 -35px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__program {
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+    outline: none;
+
+    &-logo {
+      width: 100%;
+
+      &--wrapper {
+        position: relative;
+        padding-bottom: 115%;
+      }
+
+      &-background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      &-image {
+        position: absolute;
+        max-width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-name {
+      @include font-size($font-size-large);
+
+      color: $purple-dark;
+      font-family: $font-ubuntu-bold;
+      margin: 10px 0 -8px;
+    }
+
+    &-date {
+      color: $grey;
+      margin-bottom: 15px;
+    }
+
+    &-description {
+      color: $purple-dark;
+      padding-right: 15px;
+      margin-bottom: 0;
+    }
+
+    &-btn {
+      color: $white;
+      font-family: $font-ubuntu-medium;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      // left: 35px;
+      line-height: 45px;
+    }
+  }
+
+  @media #{$media-small-desktop}, #{$media-screen-tablet} {
+    &__program {
+      width: 50%;
+
+      &-logo {
+        margin: 0 auto;
+      }
+
+      &-btn {
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+      }
+
+      &-name, &-date, &-description {
+        text-align: center;
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media #{$media-screen-mobile} {
+    &__title {
+      margin: 50px 0 -35px;
+    }
+
+    &__program {
+      width: 100%;
+      margin-bottom: 15px;
+
+      &-logo {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+
+      &-name, &-date, &-description {
+        text-align: left;
+        max-width: 70%;
+        margin: 0 auto;
+      }
+
+
+      &-name {
+        margin-top: 35px;
+
+      }
+
+      &-btn {
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+      }
+    }
+  }
+}

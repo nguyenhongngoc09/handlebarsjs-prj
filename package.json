@@ -1,0 +1,76 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "npm run assemble",
+    "watch": "./node_modules/.bin/assemble serve --env localhost --harmony 1> $APP_LOG 2> $APP_ERR",
+    "dev": "./node_modules/.bin/concurrently \"npm run lint\" \"npm run assemble\"",
+    "lint": "./node_modules/.bin/esw --watch ./app",
+    "assemble": "./node_modules/.bin/assemble serve --env localhost"
+  },
+  "devDependencies": {
+    "assemble": "^0.17.1",
+    "babel-core": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.5.2",
+    "base-watch": "^0.1.3",
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.2.1",
+    "concurrently": "^3.5.1",
+    "del": "^1.1.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-watch": "^3.1.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^6.1.1",
+    "gulp-beautify": "^2.0.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-concat-js": "^0.1.0",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-extname": "^0.2.2",
+    "gulp-file": "^0.4.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-inline-source": "^3.0.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-npm-files": "^0.1.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.0.0",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-tap": "^1.0.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^3.1.2",
+    "handlebars-helpers": "^0.7.5",
+    "main-bower-files": "^2.5.0",
+    "minimist": "^1.2.0",
+    "wiredep": "^2.2.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

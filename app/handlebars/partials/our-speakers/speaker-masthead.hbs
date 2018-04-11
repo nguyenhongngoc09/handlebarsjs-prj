@@ -1,0 +1,10 @@
+<div class="speakers__masthead">
+  <div class="speakers__masthead-wrapper">
+    <div class="speakers__masthead-image">
+      <img class="js-binding-field" data-field="image" src="{{@root.config.asset_url}}{{speaker.image}}" alt="{{speaker.imageAlt}}">
+    </div>
+    <img
+      class="speakers__masthead-image speakers__masthead-hexagons js-image-slider"
+      src="{{@root.config.asset_url}}{{#if isHexagonRight}}frame-speaker-right.png{{else}}frame-speaker-left.png{{/if}}">
+  </div>
+</div>

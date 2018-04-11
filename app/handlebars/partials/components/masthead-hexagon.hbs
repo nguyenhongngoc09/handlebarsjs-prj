@@ -1,0 +1,21 @@
+<div class="masthead-hexagon {{#if isMobile}}masthead-hexagon--mobile{{/if}}">
+  <div class="masthead-hexagon__wrapper {{#if isMobile}}masthead-hexagon__wrapper--mobile{{else}}masthead-hexagon__wrapper--desktop{{/if}}">
+    <img class="masthead-hexagon__image" src="{{config.asset_url}}masthead-big-hexagons.png">
+    <div class="masthead-hexagon__image--small">
+      <div class="masthead-hexagon__image--small-wrapper">
+        <img class="masthead-hexagon__image js-auto-change-src"
+          src="{{config.asset_url}}masthead-small-1.png"
+          data-asset-url="{{config.asset_url}}"
+          data-images="masthead-hexagon.png,masthead-small-1.png" data-disable-auto="true">
+      </div>
+    </div>
+    <div class="masthead-hexagon__image--large">
+      <div class="masthead-hexagon__image--large-wrapper">
+        <img class="masthead-hexagon__image js-auto-change-src"
+          src="{{config.asset_url}}masthead-big-1.png"
+          data-asset-url="{{config.asset_url}}"
+          data-images="masthead-small-1.png,masthead-big-1.png" data-disable-auto="true">
+      </div>
+    </div>
+  </div>
+</div>

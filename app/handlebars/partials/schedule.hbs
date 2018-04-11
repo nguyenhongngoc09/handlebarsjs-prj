@@ -1,0 +1,32 @@
+<section class="container-full-width">
+  <div class="schedule">
+    <div class="container">
+      <div class="row flex-row">
+        <div class="flex-col flex-col--mobile-full flex-col--center col-sm-6 col-md-5 schedule__overview">
+          <div class="schedule__overview-conference">
+            <div class="button button--normal button--no-hover schedule__overview-conference__action ubuntu-footnote ubuntu-footnote--medium">{{info.tag}}</div>
+          </div>
+
+          <div class="schedule__overview-detail">
+            <h4 class="schedule__overview-detail__start">{{info.start}}</h4>
+            <h1 class="schedule__overview-detail__idea">{{{info.idea}}}</h1>
+          </div>
+
+          {{> masthead-hexagon isMobile=true }}
+
+          <div class="schedule__overview-address">
+            {{> venue venue=info.venue}}
+          </div>
+          <div class="schedule__overview-view-schedule">
+            <a href="{{info.viewSchedule.link}}" target="{{info.viewSchedule.target}}" class="js-scroll-to-id">
+              <div class="button button--large schedule__overview-view-schedule__action">{{info.viewSchedule.text}}</div>
+            </a>
+          </div>
+        </div>
+        <div class="flex-col flex-col--mobile-full flex-col--center col-sm-6 col-md-5">
+          {{> masthead-hexagon }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
